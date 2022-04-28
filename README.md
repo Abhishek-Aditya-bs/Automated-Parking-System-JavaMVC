@@ -67,6 +67,31 @@ When the user comes back to the application to unpark his car, after he logs in,
 
 5. The Composition Over Inheritance Principle: One should often prefer composition over inheritance when designing their systems. In Java, this means that we should more often define interfaces and implement them, rather than defining classes and extending them. This principle was used throughout the project where objects of the database were created inside the classes using it, instead of inheriting the functionalities of the database class. Another example where this principle was used was using the objects of the view and controller of various modules during the current frame dispose function and calling the next frame by using the view and controller of the required module.
 
+# Installation and Running
+
+- Clone the repository
+
+- Open the application as a Java Maven Project
+
+- In the terminal run
+
+```python
+pip install geocoder
+pip install geopy
+```
+
+- cd src/main/java/com/parkingmvc/
+
+- In Line 16 in `src/main/java/com/parkingmvc/GeoLocation/GeoLocationModel.java` change the absolute path of `GeoLocater.py` file
+
+```java
+String command = "python /Users/abhishek-aditya-bs/Desktop/ParkingSystemMVC/parkingsystemmvc/src/main/java/com/parkingmvc/GeoLocation/GeoLocater.py";
+```
+
+- Run the `app.java`
+
+- Use MongoDB compass to get a better view of all the database activities
+
 # LICENSE
 MIT
 
